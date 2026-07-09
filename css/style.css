@@ -403,9 +403,8 @@ img { max-width: 100%; }
 }
 
 .about-card:hover {
-  transform: translateY(-4px);
+  transform: scale(1.03);
   box-shadow: var(--shadow-md);
-  border-color: var(--orange);
 }
 
 .about-icon {
@@ -495,11 +494,12 @@ img { max-width: 100%; }
   border-radius: var(--radius);
   border: 1px solid var(--gray-200);
   overflow: hidden;
-  transition: var(--transition);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: scale(1.04);
   box-shadow: var(--shadow-lg);
 }
 
@@ -637,8 +637,8 @@ img { max-width: 100%; }
 }
 
 .timeline-content:hover {
+  transform: scale(1.02);
   box-shadow: var(--shadow-md);
-  border-color: var(--orange);
 }
 
 .timeline-date {
@@ -695,9 +695,8 @@ img { max-width: 100%; }
 }
 
 .contact-card:hover {
-  transform: translateY(-6px);
+  transform: scale(1.04);
   box-shadow: var(--shadow-md);
-  border-color: var(--orange);
 }
 
 .contact-card .contact-icon {
