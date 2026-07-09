@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Cloud Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">&lt;dev /&gt;</a>
+      <div class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Cloud Engineer</h1>
+        <p class="hero-title">Infrastructure &amp; Backend Developer</p>
+        <p class="hero-desc">
+          클라우드 인프라부터 웹 애플리케이션까지, 안정적이고 확장 가능한 
+          시스템을 설계하고 구축합니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://velog.io" target="_blank" aria-label="Blog"><i class="fas fa-blog"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-code-card">
+          <div class="code-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code><span class="code-kw">const</span> <span class="code-fn">build</span> = <span class="code-kw">async</span> () => {
+  <span class="code-kw">const</span> infra = <span class="code-kw">await</span> <span class="code-fn">provision</span>({ region: <span class="code-str">"ap-northeast-2"</span> });
+  <span class="code-kw">const</span> app = <span class="code-fn">deploy</span>(infra);
+  <span class="code-kw">return</span> { status: <span class="code-str">"🚀"</span>, uptime: <span class="code-num">99.99</span> };
+};
+<span class="code-fn">build</span>();</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-desc">클라우드 기술로 문제를 해결하는 엔지니어입니다.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud Infrastructure</h3>
+          <p>AWS 기반 인프라 설계 및 운영, IaC를 통한 자동화, 
+             컨테이너 오케스트레이션 경험을 보유하고 있습니다.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-code"></i></div>
+          <h3>Backend Development</h3>
+          <p>Node.js, Python 기반의 확장 가능한 백엔드 시스템을 
+             설계하고 RESTful API 및 마이크로서비스를 개발합니다.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>DevOps &amp; Security</h3>
+          <p>CI/CD 파이프라인 구축, 모니터링 시스템 운영, 
+             보안 모범 사례를 적용한 안정적인 서비스를 제공합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Technologies</h2>
+        <p class="section-desc">다양한 도구와 기술을 활용합니다.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-cloud"></i> Cloud &amp; Infrastructure</h3>
+          <div class="skill-items">
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">Terraform</span>
+            <span class="skill-badge">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages &amp; Frameworks</h3>
+          <div class="skill-items">
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Database &amp; Storage</h3>
+          <div class="skill-items">
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">Redis</span>
+            <span class="skill-badge">DynamoDB</span>
+            <span class="skill-badge">S3</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools &amp; Monitoring</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Linux</span>
+            <span class="skill-badge">Prometheus</span>
+            <span class="skill-badge">Grafana</span>
+            <span class="skill-badge">ELK Stack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-desc">직접 설계하고 구축한 프로젝트들입니다.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Cloud-Native Platform</h3>
+            <p class="project-desc">AWS EKS 기반 마이크로서비스 플랫폼 구축. 
+               Terraform IaC, ArgoCD GitOps, Prometheus/Grafana 모니터링 구성.</p>
+            <div class="project-tags">
+              <span>AWS</span>
+              <span>Kubernetes</span>
+              <span>Terraform</span>
+              <span>ArgoCD</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Real-time Alert Bot</h3>
+            <p class="project-desc">Selenium 기반 웹 크롤러 + Discord 알림 봇. 
+               Docker Compose로 배포, 24시간 모니터링 자동화 시스템.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Selenium</span>
+              <span>Discord API</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">HWP to Markdown Converter</h3>
+            <p class="project-desc">한글 문서(HWP/HWPX)를 Markdown으로 변환하는 CLI 도구. 
+               LibreOffice + pyhwp 하이브리드 방식으로 높은 변환율.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>CLI</span>
+              <span>LibreOffice</span>
+              <span>HTML Parsing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Career Journey</h2>
+        <p class="section-desc">경험을 통해 성장해왔습니다.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 - Present</div>
+            <h3>Cloud Solutions Architect</h3>
+            <h4>Tech Company</h4>
+            <p>AWS 인프라 설계 및 운영, 마이크로서비스 전환 리드, 
+               DevOps 파이프라인 구축 및 자동화.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2022 - 2024</div>
+            <h3>Backend Developer</h3>
+            <h4>Startup Inc.</h4>
+            <p>Node.js/TypeScript 기반 백엔드 개발, RESTful API 설계, 
+               PostgreSQL 데이터베이스 설계 및 최적화.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 - 2022</div>
+            <h3>Junior Developer</h3>
+            <h4>Web Agency</h4>
+            <p>웹 애플리케이션 개발 및 유지보수, 
+               클라우드 마이그레이션 지원, 모니터링 시스템 구축.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">함께 일하고 싶으신가요? 언제든 연락주세요.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h3>Email</h3>
+              <p>hello@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h3>Location</h3>
+              <p>Seoul, South Korea</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h3>Available</h3>
+              <p>Open to opportunities</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">&lt;dev /&gt;</a>
+          <p>Cloud Engineer &amp; Backend Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://velog.io" target="_blank" aria-label="Blog"><i class="fas fa-blog"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cloud Engineer Portfolio. Built with <i class="fas fa-heart" style="color: #FF9900;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
