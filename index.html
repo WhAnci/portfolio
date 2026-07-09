@@ -11,7 +11,7 @@
 <body>
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">&lt;dev / WhAnci&gt;</a>
+      <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/25/25627.png" alt="" class="logo-icon"> whanci</a>
       <div class="nav-toggle" id="navToggle">
         <i class="fas fa-bars"></i>
       </div>
@@ -21,6 +21,7 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://github.com/WhAnci/portfolio" target="_blank" class="nav-link nav-gh" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
       </ul>
     </div>
   </nav>
@@ -47,7 +48,7 @@
         <div class="hero-social">
           <a href="https://github.com/WhAnci" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/swanno3o" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://velog.io/@whanci" target="_blank" aria-label="Blog"><i class="fas fa-blog"></i></a>
+          <a href="https://velog.io/@whanci" target="_blank" aria-label="Blog"><svg class="icon-velog" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z"/></svg></a>
         </div>
       </div>
       <div class="hero-visual">
@@ -55,12 +56,16 @@
           <div class="code-dots">
             <span></span><span></span><span></span>
           </div>
-          <pre><code><span class="code-kw">const</span> <span class="code-fn">build</span> = <span class="code-kw">async</span> () => {
-  <span class="code-kw">const</span> infra = <span class="code-kw">await</span> <span class="code-fn">provision</span>({ region: <span class="code-str">"ap-northeast-2"</span> });
-  <span class="code-kw">const</span> app = <span class="code-fn">deploy</span>(infra);
-  <span class="code-kw">return</span> { status: <span class="code-str">"🚀"</span>, uptime: <span class="code-num">99.99</span> };
-};
-<span class="code-fn">build</span>();</code></pre>
+          <pre><code><span class="code-kw">provider</span> <span class="code-str">"aws"</span> {
+  region = <span class="code-fn">"ap-northeast-2"</span>
+}
+
+<span class="code-kw">module</span> <span class="code-str">"Portfolio"</span> {
+  <span class="code-prop">Name</span>      = <span class="code-str">"Sihwan Lee"</span>
+  <span class="code-prop">Nickname</span>  = <span class="code-str">"WhAnci/swanno3o"</span>
+  <span class="code-prop">Gender</span>    = <span class="code-str">"Male"</span>
+  <span class="code-prop">Email</span>     = <span class="code-str">""</span>
+}</code></pre>
         </div>
       </div>
     </div>
@@ -84,7 +89,8 @@
           <div class="about-icon"><i class="fas fa-code"></i></div>
           <h3>World Skills Competition</h3>
           <p>World skills KOREA National Skills Competition의
-            선수로 출전한 경험이 있으며, ( )메달을 수상하였습니다.
+            선수로 출전한 경험이 있으며,
+            ( )메달을 수상하였습니다.
           </p>
         </div>
         <div class="about-card">
@@ -120,6 +126,8 @@
           <div class="skill-items">
             <span class="skill-badge">C</span>
             <span class="skill-badge">Python</span>
+            <span class="skill-badge">Golang</span>
+            <span class="skill-badge">HTML</span>
           </div>
         </div>
         <div class="skill-category">
@@ -234,14 +242,14 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <div class="timeline-date">2024 - Present</div>
-            <h3>Cloud Solutions Architect</h3>
-            <h4>Tech Company</h4>
+            <div class="timeline-date">2025 - Present</div>
+            <h3>Student</h3>
+            <h4>Gongju Meister High School</h4>
             <p>AWS 인프라 설계 및 운영, 마이크로서비스 전환 리드, 
                DevOps 파이프라인 구축 및 자동화.</p>
           </div>
         </div>
-        <div class="timeline-item">
+        <!-- <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-date">2022 - 2024</div>
@@ -260,7 +268,7 @@
             <p>웹 애플리케이션 개발 및 유지보수, 
                클라우드 마이그레이션 지원, 모니터링 시스템 구축.</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -270,49 +278,24 @@
       <div class="section-header">
         <span class="section-tag">Contact</span>
         <h2 class="section-title">Get In Touch</h2>
-        <p class="section-desc">함께 일하고 싶으신가요? 언제든 연락주세요.</p>
+        <p class="section-desc">언제든 연락주세요.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <h3>Email</h3>
-              <p>hello@example.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <h3>Location</h3>
-              <p>Seoul, South Korea</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-clock"></i></div>
-            <div>
-              <h3>Available</h3>
-              <p>Open to opportunities</p>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <input type="text" id="subject" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
+      <div class="contact-links">
+        <a href="mailto:" class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>Send me an email</p>
+        </a>
+        <a href="https://linkedin.com/in/swanno3o" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+          <h3>LinkedIn</h3>
+          <p>Connect with me</p>
+        </a>
+        <a href="https://instagram.com/swanno3o" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+          <h3>Instagram</h3>
+          <p>Follow me</p>
+        </a>
       </div>
     </div>
   </section>
@@ -321,13 +304,13 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#" class="logo">&lt;dev /&gt;</a>
+          <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/25/25627.png" alt="" class="logo-icon"> whanci</a>
           <p>Cloud Engineer &amp; Backend Developer</p>
         </div>
         <div class="footer-links">
-          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://velog.io" target="_blank" aria-label="Blog"><i class="fas fa-blog"></i></a>
+          <a href="https://github.com/WhAnci" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/swanno3o" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://velog.io/@whanci" target="_blank" aria-label="Blog"><svg class="icon-velog" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z"/></svg></a>
         </div>
       </div>
       <div class="footer-bottom">

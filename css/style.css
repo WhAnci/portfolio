@@ -87,10 +87,20 @@ img { max-width: 100%; }
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--orange);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: -16px;
+}
+
+.logo-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(96%) saturate(481%) hue-rotate(346deg) brightness(103%) contrast(105%);
 }
 
 .nav-menu {
@@ -124,6 +134,21 @@ img { max-width: 100%; }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.nav-gh {
+  display: inline-block;
+  font-size: 1.35rem;
+  line-height: 1;
+  transform: translateY(3px);
+}
+
+.nav-gh:hover {
+  color: var(--orange) !important;
+}
+
+.nav-gh::after {
+  display: none;
 }
 
 .nav-toggle {
@@ -264,6 +289,14 @@ img { max-width: 100%; }
   transform: translateY(-2px);
 }
 
+.hero-social .icon-velog {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: currentColor;
+  transform: translateY(-2px);
+}
+
 /* Hero Code Card */
 .hero-visual {
   position: relative;
@@ -277,12 +310,6 @@ img { max-width: 100%; }
   padding: 24px;
   backdrop-filter: blur(10px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
 }
 
 .code-dots {
@@ -314,9 +341,10 @@ img { max-width: 100%; }
 }
 
 .code-kw { color: #c792ea; }
-.code-fn { color: #82aaff; }
+.code-fn { color: #f78c6c; }
 .code-str { color: #c3e88d; }
 .code-num { color: #f78c6c; }
+.code-prop { color: #82aaff; }
 
 /* Sections */
 .section {
@@ -645,79 +673,63 @@ img { max-width: 100%; }
 }
 
 /* Contact */
-.contact-grid {
+.contact-links {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 48px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contact-info {
+.contact-card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+  transition: var(--transition);
+  cursor: pointer;
 }
 
-.contact-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--orange);
 }
 
-.contact-icon {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+.contact-card .contact-icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255,153,0,0.1);
-  border-radius: 12px;
+  border-radius: 16px;
   color: var(--orange);
-  font-size: 1.125rem;
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+  transition: var(--transition);
 }
 
-.contact-item h3 {
-  font-size: 1rem;
+.contact-card:hover .contact-icon {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--gray-800);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-.contact-item p {
-  font-size: 0.925rem;
+.contact-card p {
+  font-size: 0.9rem;
   color: var(--gray-500);
-}
-
-.contact-form {
-  background: var(--white);
-  padding: 32px;
-  border-radius: var(--radius);
-  border: 1px solid var(--gray-200);
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 14px 16px;
-  font-size: 0.925rem;
-  font-family: inherit;
-  border: 1px solid var(--gray-200);
-  border-radius: 8px;
-  background: var(--gray-50);
-  transition: var(--transition);
-  outline: none;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(255,153,0,0.1);
-  background: var(--white);
 }
 
 /* Footer */
@@ -758,6 +770,14 @@ img { max-width: 100%; }
 
 .footer-links a:hover {
   color: var(--orange);
+}
+
+.footer-links .icon-velog {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  fill: currentColor;
+  transform: translateY(-2px);
 }
 
 .footer-bottom {
@@ -857,9 +877,9 @@ img { max-width: 100%; }
     grid-template-columns: 1fr;
   }
 
-  .contact-grid {
+  .contact-links {
     grid-template-columns: 1fr;
-    gap: 32px;
+    max-width: 400px;
   }
 
   .footer-content {
