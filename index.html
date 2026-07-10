@@ -236,6 +236,8 @@
       </div>
     </div>
   </section>
+
+  <section id="experience" class="section section-alt">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Experience</span>
@@ -364,5 +366,19 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    (function() {
+      const target = sessionStorage.getItem('scrollTo');
+      if (target) {
+        sessionStorage.removeItem('scrollTo');
+        const el = document.getElementById(target);
+        if (el) {
+          setTimeout(function() {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>

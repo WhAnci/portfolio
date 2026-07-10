@@ -40,7 +40,7 @@
 
   <section class="section">
     <div class="container">
-      <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="index.html" class="back-link" id="backLink"><i class="fas fa-arrow-left"></i> Back</a>
       <div class="projects-grid projects-grid-full">
         <div class="project-card">
           <div class="project-img">
@@ -159,5 +159,10 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    document.getElementById('backLink').addEventListener('click', () => {
+      sessionStorage.setItem('scrollTo', 'projects');
+    });
+  </script>
 </body>
 </html>
