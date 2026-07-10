@@ -119,6 +119,10 @@
   border-color: rgba(255,255,255,0.1);
 }
 
+[data-theme="dark"] .hero-code-card code {
+  color: #d4d4d4;
+}
+
 [data-theme="dark"] .hero-name {
   color: #f0f4f8;
 }
