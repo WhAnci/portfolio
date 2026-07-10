@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FF9900'/><text x='50' y='68' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>W</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/25/25627.png" alt="" class="logo-icon"> whanci</a>
+      <div class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="index.html#awards" class="nav-link">Achievements</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://github.com/WhAnci/portfolio" target="_blank" class="nav-link nav-gh" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Projects</span>
+        <h1>All Projects</h1>
+        <p>지금까지 작업한 모든 프로젝트입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+      <div class="projects-grid projects-grid-full">
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Cloud-Native Platform</h3>
+            <p class="project-desc">AWS EKS 기반 마이크로서비스 플랫폼 구축. Terraform IaC, ArgoCD GitOps, Prometheus/Grafana 모니터링 구성.</p>
+            <div class="project-tags">
+              <span>AWS</span>
+              <span>Kubernetes</span>
+              <span>Terraform</span>
+              <span>ArgoCD</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Real-time Alert Bot</h3>
+            <p class="project-desc">Selenium 기반 웹 크롤러 + Discord 알림 봇. Docker Compose로 배포, 24시간 모니터링 자동화 시스템.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Selenium</span>
+              <span>Discord API</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Small Snowflake</h3>
+            <p class="project-desc">자신의 성격 유형을 간단한 설문을 통해 작고 아름다운 눈송이로 표현합니다.</p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Vercel</span>
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #232f3e 0%, #FF9900 100%);">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">HWP to Markdown Converter</h3>
+            <p class="project-desc">한글 문서(HWP/HWPX)를 Markdown으로 변환하는 CLI 도구. LibreOffice + pyhwp 하이브리드 방식.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>CLI</span>
+              <span>LibreOffice</span>
+              <span>HTML Parsing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/25/25627.png" alt="" class="logo-icon"> whanci</a>
+          <p>Cloud Engineer &amp; Backend Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/WhAnci" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/swanno3o" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://velog.io/@whanci" target="_blank" aria-label="Blog"><svg class="icon-velog" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cloud Engineer Portfolio. Built with <i class="fas fa-heart" style="color: #FF9900;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-btns">
+    <button class="float-btn" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="float-btn" id="themeToggle" aria-label="Toggle theme">
+      <i class="material-icons">dark_mode</i>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

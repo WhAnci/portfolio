@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Cloud Engineer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FF9900'/><text x='50' y='68' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>W</text></svg>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,6 +22,7 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#awards" class="nav-link">Achievements</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
         <li><a href="https://github.com/WhAnci/portfolio" target="_blank" class="nav-link nav-gh" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
       </ul>
@@ -228,10 +231,11 @@
           </div>
         </div>
       </div>
+      <div class="projects-more">
+        <a href="projects.html" class="more-link">View All Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
   </section>
-
-  <section id="experience" class="section section-alt">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Experience</span>
@@ -269,6 +273,37 @@
                클라우드 마이그레이션 지원, 모니터링 시스템 구축.</p>
           </div>
         </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Awards</span>
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-desc">도전하고 성취한 순간들입니다.</p>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <div class="award-content">
+            <div class="award-date">2025</div>
+            <h3>공주마이스터고등학교 교내 프로젝트</h3>
+            <p>교내 프로젝트에서 클라우드 인프라와
+              SW, Web 제작을 담당하여, 최우수상을 수상하였습니다.
+            </p>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon"><i class="fas fa-medal"></i></div>
+          <div class="award-content">
+            <div class="award-date">2026</div>
+            <h3>클라우드 컴퓨팅 지방기능경기대회</h3>
+            <p>클라우드 컴퓨팅 지방기능경기대회 충청남도 지방대회에서 동상을 수상하였습니다.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -318,6 +353,15 @@
       </div>
     </div>
   </footer>
+
+  <div class="floating-btns">
+    <button class="float-btn" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="float-btn" id="themeToggle" aria-label="Toggle theme">
+      <i class="material-icons">dark_mode</i>
+    </button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
